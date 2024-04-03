@@ -151,7 +151,7 @@ namespace CoreBankingSoftware
             // You can implement your logic here
             // For simplicity, let's just return a random number for now
             Random rand = new Random();
-            return rand.Next(10000000, 99999999); // Return a 6-digit random number
+            return rand.Next(10000000, 99999999); // Return a 8-digit random number
         }
 
         public static void ViewAllAccounts()
