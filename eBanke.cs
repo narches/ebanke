@@ -1,3 +1,9 @@
+// Developer: Nnachi, Joseph Otu
+// Project: eBanke: Core Banking Software Application
+// (Copyright (c)2024)
+
+
+
 using System;
 using System.Collections.Generic;
 
@@ -89,20 +95,19 @@ namespace CoreBankingSoftware
             }
 
             Console.WriteLine("\nCreate Account:");
-            Console.Write(" Enter your name: ");
+            Console.Write("     Enter your name: ");
             string name = Console.ReadLine();
-            Console.Write("Enter your address: ");
-            Console.Write("Enter your date of birth and tap [ENTER] twice (YYYY-MM-DD): ");
-            DateTime dateOfBirth = DateTime.Parse(Console.ReadLine());
+            Console.Write("     Enter your address: ");
             string address = Console.ReadLine();
-            Console.WriteLine("Select Account Type: ");
-            Console.WriteLine("1. Q-Savings Accounts ");
-            Console.WriteLine("2. Savings Account ");
-            Console.WriteLine("3. Fixed Deposit Account ");
-            Console.WriteLine("4. Current Account [Corporate] ");
-            Console.WriteLine("5. Current Account [Individual] ");
-            Console.WriteLine("6. Current Account [Non-Profit] \n");
-            Console.WriteLine();
+            Console.Write("     Enter your date of birth and tap [ENTER] twice (YYYY-MM-DD): ");
+            DateTime dateOfBirth = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("     Select Account Type: ");
+            Console.WriteLine("  1. Q-Savings Accounts ");
+            Console.WriteLine("  2. Savings Account ");
+            Console.WriteLine("  3. Fixed Deposit Account ");
+            Console.WriteLine("  4. Current Account [Corporate] ");
+            Console.WriteLine("  5. Current Account [Individual] ");
+            Console.WriteLine("  6. Current Account [Non-Profit] \n");
             Console.Write($"  Kindly enter any number from [1-6]  to select type of account: ");
             string accType = Console.ReadLine();
             AccountType type;
@@ -136,6 +141,7 @@ namespace CoreBankingSoftware
             Account account = new Account(name, address, type, dateOfBirth);
             accounts.Add(account);
             customerCount++;
+            Console.WriteLine();
             Console.WriteLine($" Account created successfully!  [Account Number: {account.AccountNumber} ], Name: {account.Name}, Type: {account.Type}, Balance: {account.Balance}, Creation Date: {account.CreationDate}");
         }
 
@@ -314,8 +320,6 @@ namespace CoreBankingSoftware
                     Console.WriteLine();
                     Console.WriteLine($"    Hello {nom}! What would you want to do with eBanke today?");
                     Console.WriteLine();
-                    Console.WriteLine("\nMenu: ");
-                    Console.WriteLine();
                     Console.WriteLine("         1. Create Account");
                     Console.WriteLine("         2. View All Accounts");
                     Console.WriteLine("         3. View Account by Account Number");
@@ -326,7 +330,6 @@ namespace CoreBankingSoftware
                     Console.WriteLine("         8. Withdraw Funds");
                     Console.WriteLine("         9. Transfer Funds");
                     Console.WriteLine("         0. Exit \n");
-                    Console.WriteLine();
                     Console.Write($"     {nom}, Kindly enter any number from [1-5] to try eBanke [0] to EXIT ebanke: ");
 
                     string choice = Console.ReadLine();

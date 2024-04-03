@@ -5,7 +5,7 @@
 eBanke is a simple core banking software that was created with C# with the aim to bring a unique banking experience to financial institution.
 The purpose of this program is to make create a banking experience that is fast and efficient . Users can interact with the software to manage their banking needs efficiently, making it a versatile tool for both customers and bank administrators. With its intuitive interface and comprehensive functionality, the software streamlines banking operations for a seamless user experience.
 
-[Software Demo Video]()
+[Software Demo Video](https://youtu.be/rDWY_sYdsi4?si=p_TfMS8rTf8jqEDe)
 
 # **Development Environment**
 
